@@ -128,7 +128,7 @@ void ArduinoTalker::ParseIncomingWord(QByteArray inWord)
         {
             rxSum+=inData->at(i);
 
-            //qDebug() << "Extracting.." << inData->at(i);
+            qDebug() << "Extracting.." << inData->at(i);
         }
 
         if(rxSum - inData->last() > errorLimit)
